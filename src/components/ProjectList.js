@@ -4,10 +4,16 @@ import ProjectItem from "./ProjectItem";
 class ProjectList extends Component {
   render() {
     return (
-      <div>
-        <h1>from Project List</h1>
+      <ul className="list-group my-5">
+        <h1 className="text-capitalize text-center">Project List</h1>
         <ProjectItem />
-      </div>
+        <button
+          type="button"
+          className="button btn btn-danger btn-block text-capitalize mt-5"
+        >
+          Clear List
+        </button>
+      </ul>
     );
   }
 }
